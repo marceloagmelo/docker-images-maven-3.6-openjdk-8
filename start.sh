@@ -12,7 +12,7 @@ $DOCKER_REGISTRY/maven-$MAVEN_VERSION-openjdk-$JAVA_VERSION
 docker ps
 
 
-docker run -it --name $CONTAINER_NAME \
--p 8080:8080 \
--e TZ=America/Sao_Paulo \
-$DOCKER_REGISTRY/maven-$MAVEN_VERSION-openjdk-$JAVA_VERSION shell
+#docker run -it --name $CONTAINER_NAME \
+#-p 8080:8080 \
+#-e TZ=America/Sao_Paulo \
+#$DOCKER_REGISTRY/maven-$MAVEN_VERSION-openjdk-$JAVA_VERSION shell
