@@ -19,6 +19,7 @@ RUN curl -fsSL -o /tmp/apache-maven.tar.gz $MAVEN_ARTIFACTORY_URL/apache-maven-$
     echo "${SHA}  /tmp/apache-maven.tar.gz" | sha512sum -c - && \
     tar -xzvf /tmp/apache-maven.tar.gz -C $MAVEN_HOME --strip-components=1 && \
     ln -s $MAVEN_HOME/bin/mvn /usr/bin/mvn && \
+    echo "running..." >> /opt/run.log && \
     yum clean all && \
     rm -Rf /tmp/* && rm -Rf /var/tmp/*
 
